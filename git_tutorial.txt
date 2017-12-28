@@ -1,0 +1,59 @@
+1. clone from specific branch
+
+git clone -b my-branch https://git@github.com/username/myproject.git
+
+=================================================
+
+go to any folder cd space that folder path
+1. create a local git repo
+git init
+this will create a local repo in ur machine
+2. add a file 
+git add readme.md (make sure u have created the file physically)
+this will add the file to git staging or git index 
+3. git commit -m 'message'
+this will transfer the file from git index or staging to local repo
+4. Still there is no entry in remote repo, all are in your local repo. 
+    git push -u origin master
+this will upload whatever in your local repo to origin(remote) and the one and only branch name is master.
+
+5. create a new branch
+
+git branch dev
+git checkout dev 
+
+it will create the branch dev in local repo if does not exist, if this repo exist in your local repo then your workspace 
+ will point to the branch  
+6.  git push -u origin master
+this will upload all the changes of local repo dev branch to origin (remote) master branch , 
+because you don't have any remote dev branch now. But you can create like
+git push -u origin dev (insted of master) it will create a new dev branch in remote and merge your local dev branch code there.
+
+7. switch branch
+git checkout branchname 
+
+It will switch between local repo branches , but with some condition
+
+suppose your master and dev branches have different files then you are recommended to do the following command
+
+git stash
+it will stage the current changes of the branch to staging or index. next time when u come back to this branch it will reflect again
+
+8. git merge dev  (from master branch) 
+it will merge master branch into the dev branch
+
+9. git merge master (from dev branch)
+it will merge dev branch into the master branch
+
+10. git rebase dev (from master branch)
+it will put the dev branch onto the master branch
+
+11.  difference between rebase and merge
+merge will merge your code accordingly the commit timestamp but rebase always follow the push timestamp, so it will always put
+your changes at the top of the latest change.
+
+
+
+
+
+ 
