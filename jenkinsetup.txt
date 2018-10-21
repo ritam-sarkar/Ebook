@@ -1,0 +1,37 @@
+Jenkin setup
+1. Install jenkin
+2. Open this url in browser http://localhost:8080/
+3. id : admin pwd : go to C:\Program Files (x86)\Jenkins\secrets and copy password from initialAdminPassword
+4. Go to new item and create freestyle project
+5. add git repo url (We need credential setup for private repo)
+6. Go to addtional behaviour select check-out to sub directory and put the local git repo path
+7. Build environment select with ant
+8. Build -- add build setup -- execute windows batch command
+   add go to parent directory path and put all ant commands like ant clean jar
+9. Go to post build action  and configure junit, server all these things
+10. Now solve the credential problem in step 5
+    go to repo home in local and run
+	
+ssh-keygen -t rsa -C "rit.style@gmail.com"
+It will create key pair public and private 
+by default it will be stored in 
+/c/Users/Ritam/.ssh/id_rsa  (private)
+/c/Users/Ritam/.ssh/id_rsa.pub (public)
+
+11. Add the public key in git
+ go to setting-- deploy key -- create a key paste the public key not private key.
+ 
+ To copy public key go to repohome again and clip < "c:/Users/Ritam/.ssh/id_rsa.pub"
+ 
+12. In jenkin ho to credential -- system -- globalcredentials -- add credntials left hand side
+
+13. kind -- ssh username with private key
+    Give any username and paste the private key (not public key) and save
+14. Go to step configuration and select the userid from credential list for git and save
+
+15. Run build now
+	
+	
+ 
+ 
+    
