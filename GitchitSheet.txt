@@ -1,0 +1,57 @@
+Follow this cheatshit
+https://gist.github.com/hofmannsven/6814451
+
+
+1. Track remote branch
+
+https://www.git-tower.com/learn/git/faq/track-remote-upstream-branch
+
+2. create new branch
+ git checkout -b 'new branch' origi/oldbranch
+ git push -u origin new branch
+ 
+3. track with remote branch
+git branch -u origin/dev
+
+4. Delete local branh 
+ git branch -D branch_name
+ git push origin --delete branch_to_be_deleted
+5. Make the local branch on same head as remote branch
+
+git reset --hard origin/remote
+
+6. change the repo 
+
+git remote add origin git://github.com/pjhyett/hw.git
+
+7. Remove untracked directories
+
+git clean -f -d directory_name
+
+clean ignoring the files
+git clean -f -X  directory_name
+
+8. Rename branch after pushing to remote 
+
+https://multiplestates.wordpress.com/2015/02/05/rename-a-local-and-remote-branch-in-git/
+
+9. see all changes by me 
+git log --author=ritsarka
+
+10. soft reset to specific commit
+git reset --soft c14809fa
+
+11. Move from unstaged to staged 
+git reset HEAD -- path/to/file
+git reset HEAD -- .  for all
+
+
+
+
+
+
+
+ 
+ 
+ 
+ 
