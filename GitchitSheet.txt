@@ -45,6 +45,10 @@ git reset --soft c14809fa
 git reset HEAD -- path/to/file
 git reset HEAD -- .  for all
 
+12. Remove all the unstaged files
+git checkout -- .
+
+
 
 
 
