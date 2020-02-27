@@ -1,0 +1,34 @@
+Flight 110000
+_____________________________________________
+paris hotel : 12000
+eifel tower : 10600
+paris city tour : 5500
+paris to geneva : 4700
+Food : 7000
+Day 2 
+Total : 40,000
+__________________________________________
+
+swiss pass : 26300
+interlaken stay : 15000
+lucern : 12000
+zurikh : 10000
+cable car : 13000
+Food : 15000
+Day 4
+
+Total : 90500
+__________________________________________
+
+zurich to florence : 9500
+florence stay : 16000
+florence to venice : 9000
+venice boat : 3160
+florence to pisa : 1263
+florence to rome : 2367
+Rome stay : 5500
+Day 4
+Food : 14000
+
+Total : 51000
+_____________________________________

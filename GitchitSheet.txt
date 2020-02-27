@@ -48,6 +48,9 @@ git reset HEAD -- .  for all
 12. Remove all the unstaged files
 git checkout -- .
 
+13. Show commits only for the branch
+git log --first-parent --no-merges
+
 
 
 
