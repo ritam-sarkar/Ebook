@@ -1,0 +1,39 @@
+https://riversand.atlassian.net/wiki/spaces/RP/pages/79757385/Working+with+GIT+-+Fork+Pattern
+Create a new branch
+git checkout -b 'new_branch' origin/sourcebranchname
+git push -u origin new_branch
+______________________________________
+
+merge conflicts
+git mergetool --tool=kdiff3
+
+
+__________________________________
+git reset
+git reset --hard f414f31
+git reset --hard HEAD
+git reset --soft HEAD@{1}
+# if want to resset all the commits after merge
+git reset --hard HEAD~1
+_________________________________________
+
+// delete branch locally
+git branch -d localBranchName
+
+// delete branch remotely
+git push origin --delete remoteBranchName
+
+______________________________________________
+Set ssh key
+Generate ssh key in local
+Copy the public key in github settings
+Open .git/config and edit the url with ssh repo url not https
+
+____________________________________________________
+
+Set upstream to remote
+git remote add upstream git@github.com:riversandtechnologies/add-on-app-mass-change.git
+git fetch upstream dev
+now remote branch updated in your local repo
+git chekout  dev to checkout from ritsarka repo
+
